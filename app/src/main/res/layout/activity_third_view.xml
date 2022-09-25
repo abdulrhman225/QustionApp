@@ -4,33 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginLeft="10dp"
     android:gravity="center"
     android:orientation="vertical"
+    android:background="@color/teal_700"
     tools:context=".ThirdView">
 
     <TextView
         android:id="@+id/Third_View_tv_question"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
+        android:layout_margin="@dimen/_20sdp"
         android:gravity="center"
-        android:padding="10dp"
+        android:padding="@dimen/_10sdp"
         android:text="TextView"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="97dp"
-        tools:layout_editor_absoluteY="192dp" />
+        android:textColor="@color/black"
+        android:textSize="@dimen/_30sdp" />
 
     <TextView
+        android:textColor="@color/black"
         android:id="@+id/third_view_tv_answer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="20dp"
-        android:padding="10dp"
-        android:textSize="18sp" />
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:padding="@dimen/_10sdp"
+        android:textSize="@dimen/_18sdp" />
 
     <TableLayout
         android:layout_width="match_parent"
@@ -38,76 +38,94 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:gravity="center">
 
             <Button
                 android:id="@+id/third_View_btn1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="3dp"
+                android:layout_margin="@dimen/_2sdp"
+                android:background="@drawable/background"
                 android:text="Button"
-                android:textSize="14sp" />
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
 
             <Button
                 android:id="@+id/third_View_btn2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="3dp"
+                android:layout_margin="@dimen/_2sdp"
+                android:background="@drawable/background"
                 android:text="Button"
-                android:textSize="14sp" />
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
 
             <Button
                 android:id="@+id/third_View_btn3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="3dp"
+                android:layout_margin="@dimen/_2sdp"
+                android:background="@drawable/background"
                 android:text="Button"
-                android:textSize="14sp" />
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
 
             <Button
                 android:id="@+id/third_View_btn4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="3dp"
+                android:layout_margin="@dimen/_3sdp"
+                android:background="@drawable/background"
                 android:text="Button"
-                android:textSize="14sp" />
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:gravity="center">
 
             <Button
                 android:id="@+id/third_View_btn5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="3dp"
+                android:layout_margin="@dimen/_2sdp"
+                android:background="@drawable/background"
                 android:text="Button"
-                android:textSize="14sp" />
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
 
             <Button
                 android:id="@+id/third_View_btn6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="3dp"
+                android:layout_margin="@dimen/_2sdp"
+                android:background="@drawable/background"
                 android:text="Button"
-                android:textSize="14sp" />
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
 
             <Button
                 android:id="@+id/third_View_btn7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="3dp"
+                android:layout_margin="@dimen/_2sdp"
+                android:background="@drawable/background"
                 android:text="Button"
-                android:textSize="14sp" />
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
 
             <Button
                 android:id="@+id/third_View_btn8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="3dp"
+                android:layout_margin="@dimen/_2sdp"
+                android:background="@drawable/background"
                 android:text="Button"
-                android:textSize="14sp" />
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
         </TableRow>
 
     </TableLayout>
@@ -122,20 +140,24 @@
             android:id="@+id/third_View_btn_next"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="3dp"
+            android:layout_margin="@dimen/_2sdp"
+            android:background="@drawable/background"
             android:text="next"
-            android:textSize="14sp" />
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
 
         <Button
             android:id="@+id/third_View_btn_empty"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="3dp"
-            android:layout_marginRight="3dp"
-            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginRight="@dimen/_2sdp"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:background="@drawable/background"
             android:text="Delete"
-            android:textSize="14sp" />
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
     </LinearLayout>
 
 </LinearLayout>

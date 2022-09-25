@@ -202,8 +202,9 @@ public class SecondView extends AppCompatActivity {
                                                 else if (finalI == 6 ){
                                                    getAllQuestion();
                                                    rb_answer1.setChecked(false);
-                                                   rb_answer1.setBackgroundColor(getResources().getColor(R.color.white));
-                                                }
+                                                        rb_answer1.setBackgroundColor(getResources().getColor(R.color.teal_700));
+
+                                                    }
 
                                             }
                                         });
@@ -252,7 +253,8 @@ public class SecondView extends AppCompatActivity {
                                                         else if (finalI == 6 ){
                                                             getAllQuestion();
                                                             rb_answer1.setChecked(false);
-                                                            rb_answer1.setBackgroundColor(getResources().getColor(R.color.white));
+                                                            rb_answer1.setBackgroundColor(getResources().getColor(R.color.teal_700));
+
                                                         }
 
                                                     }
@@ -304,7 +306,7 @@ public class SecondView extends AppCompatActivity {
                                                         else if (finalI == 6 ){
                                                             getAllQuestion();
                                                             rb_answer1.setChecked(false);
-                                                            rb_answer1.setBackgroundColor(getResources().getColor(R.color.white));
+                                                            rb_answer1.setBackgroundColor(getResources().getColor(R.color.teal_700));
                                                         }
 
                                                     }
@@ -354,7 +356,7 @@ public class SecondView extends AppCompatActivity {
                                                         else if (finalI == 6 ){
                                                             getAllQuestion();
                                                             rb_answer1.setChecked(false);
-                                                            rb_answer1.setBackgroundColor(getResources().getColor(R.color.white));
+                                                            rb_answer1.setBackgroundColor(getResources().getColor(R.color.teal_700));
                                                         }
 
                                                     }
@@ -403,7 +405,7 @@ public class SecondView extends AppCompatActivity {
                                                             rb_answer1.setBackgroundColor(getResources().getColor(R.color.Red));
                                                         }
                                                         else if (finalI == 6 ){
-                                                            rb_answer1.setBackgroundColor(getResources().getColor(R.color.white));
+                                                            rb_answer1.setBackgroundColor(getResources().getColor(R.color.teal_700));
                                                             dialog.show();
 
                                                         }
@@ -462,7 +464,7 @@ public class SecondView extends AppCompatActivity {
                                                 else if (finalI == 6 ){
                                                     getAllQuestion();
                                                     rb_answer2.setChecked(false);
-                                                    rb_answer2.setBackgroundColor(getResources().getColor(R.color.white));
+                                                    rb_answer2.setBackgroundColor(getResources().getColor(R.color.teal_700));
 
                                                 }
 
@@ -515,7 +517,7 @@ public class SecondView extends AppCompatActivity {
                                                     else if (finalI == 6 ){
                                                         getAllQuestion();
                                                         rb_answer2.setChecked(false);
-                                                        rb_answer2.setBackgroundColor(getResources().getColor(R.color.white));
+                                                        rb_answer2.setBackgroundColor(getResources().getColor(R.color.teal_700));
                                                     }
 
                                                 }
@@ -566,7 +568,7 @@ public class SecondView extends AppCompatActivity {
                                                     else if (finalI == 6 ){
                                                         getAllQuestion();
                                                         rb_answer2.setChecked(false);
-                                                        rb_answer2.setBackgroundColor(getResources().getColor(R.color.white));
+                                                        rb_answer2.setBackgroundColor(getResources().getColor(R.color.teal_700));
                                                     }
 
                                                 }
@@ -617,7 +619,7 @@ public class SecondView extends AppCompatActivity {
                                                     else if (finalI == 6 ){
                                                         getAllQuestion();
                                                         rb_answer2.setChecked(false);
-                                                        rb_answer2.setBackgroundColor(getResources().getColor(R.color.white));
+                                                        rb_answer2.setBackgroundColor(getResources().getColor(R.color.teal_700));
                                                     }
 
                                                 }
@@ -665,7 +667,7 @@ public class SecondView extends AppCompatActivity {
                                                         rb_answer2.setBackgroundColor(getResources().getColor(R.color.Red));
                                                     }
                                                     else if (finalI == 6 ){
-                                                        rb_answer2.setBackgroundColor(getResources().getColor(R.color.white));
+                                                        rb_answer2.setBackgroundColor(getResources().getColor(R.color.teal_700));
                                                         dialog.show();
                                                     }
 
@@ -722,7 +724,7 @@ public class SecondView extends AppCompatActivity {
                                                 else if (finalI == 6 ){
                                                     getAllQuestion();
                                                     rb_answer3.setChecked(false);
-                                                    rb_answer3.setBackgroundColor(getResources().getColor(R.color.white));
+                                                    rb_answer3.setBackgroundColor(getResources().getColor(R.color.teal_700));
                                                 }
 
                                             }
@@ -774,7 +776,7 @@ public class SecondView extends AppCompatActivity {
                                                     else if (finalI == 6 ){
                                                         getAllQuestion();
                                                         rb_answer3.setChecked(false);
-                                                        rb_answer3.setBackgroundColor(getResources().getColor(R.color.white));
+                                                        rb_answer3.setBackgroundColor(getResources().getColor(R.color.teal_700));
                                                     }
 
                                                 }
@@ -821,8 +823,8 @@ public class SecondView extends AppCompatActivity {
                                                         rb_answer3.setBackgroundColor(getResources().getColor(R.color.Red));
                                                     }
                                                     else if (finalI == 6 ){
-                                                        rb_answer3.setBackgroundColor(getResources().getColor(R.color.white));
                                                        dialog.show();
+                                                        rb_answer3.setBackgroundColor(getResources().getColor(R.color.teal_700));
                                                     }
 
                                                 }

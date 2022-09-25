@@ -5,45 +5,63 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/teal_700"
     android:gravity="center"
     tools:context=".MainActivity">
 
     <TextView
+        android:textColor="@color/black"
         android:id="@+id/firstView_tv_question"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
+        android:layout_margin="@dimen/_20sdp"
         android:gravity="center"
-        android:padding="10dp"
-        android:textSize="40sp" />
+        android:padding="@dimen/_10sdp"
+        android:textSize="@dimen/_30sdp" />
 
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp">
+        android:layout_margin="@dimen/_20sdp">
 
         <RadioButton
+            android:textColor="@color/black"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/background"
             android:id="@+id/firstView_rb_answer1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="10dp" />
+            android:padding="@dimen/_10sdp"
+            android:textSize="@dimen/_14sdp"/>
 
         <RadioButton
+            android:textColor="@color/black"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/background"
             android:id="@+id/firstView_rb_answer2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="10dp" />
+            android:textSize="@dimen/_14sdp"
+            android:padding="@dimen/_10sdp" />
 
         <RadioButton
+            android:textColor="@color/black"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/background"
             android:id="@+id/firstView_rb_answer3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="10dp" />
+            android:textSize="@dimen/_14sdp"
+            android:padding="@dimen/_10sdp" />
     </RadioGroup>
 
     <Button
+        android:background="@drawable/background"
         android:id="@+id/First_View_btn_next"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="next" />
+        android:textAllCaps="false"
+        android:text="Next"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp"/>
 </LinearLayout>

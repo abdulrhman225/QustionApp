@@ -5,33 +5,47 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/teal_700"
     tools:context=".mainActivity1">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp"
+        android:src="@drawable/faqs"
+        android:layout_margin="@dimen/_20sdp"/>
 
     <TextView
         android:id="@+id/main_activity_tv_firstView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:padding="10dp"
-        android:text="First View"
-        android:textSize="24sp" />
+        android:layout_margin="@dimen/_10sdp"
+        android:padding="@dimen/_10sdp"
+        android:textColor="@color/black"
+        android:text="First Theme"
+        android:background="@drawable/background"
+        android:textSize="@dimen/_20sdp" />
 
     <TextView
         android:id="@+id/main_activity_tv_secondView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:padding="10dp"
-        android:text="Second View"
-        android:textSize="24sp" />
+        android:layout_margin="@dimen/_10sdp"
+        android:padding="@dimen/_10sdp"
+        android:text="Second Theme"
+        android:textColor="@color/black"
+        android:background="@drawable/background"
+        android:textSize="@dimen/_20sdp" />
 
     <TextView
         android:id="@+id/main_activity_tv_thirdView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:padding="10dp"
-        android:text="Third View"
-        android:textSize="24sp" />
+        android:layout_margin="@dimen/_10sdp"
+        android:padding="@dimen/_10sdp"
+        android:text="Third Theme"
+        android:textColor="@color/black"
+        android:background="@drawable/background"
+        android:textSize="@dimen/_20sdp" />
 
 </LinearLayout>
