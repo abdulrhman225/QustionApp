@@ -8,7 +8,7 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:textColor="@color/black"
+        android:textColor="@color/Mint"
         android:id="@+id/Custom_dialog_tv_tryAgain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -28,13 +28,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/_5sdp"
-            android:textColor="@color/black"
+            android:textColor="@color/Mint"
             android:text="خرج من التطبيق"
             android:textSize="@dimen/_14sdp" />
 
         <Button
             android:background="@drawable/background"
-            android:textColor="@color/black"
+            android:textColor="@color/Mint"
             android:id="@+id/Custom_dialog_tryAgain"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

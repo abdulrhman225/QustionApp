@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/teal_700"
+    android:background="@color/Mint"
     tools:context=".mainActivity1">
 
 
@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/_10sdp"
         android:padding="@dimen/_10sdp"
-        android:textColor="@color/black"
+        android:textColor="@color/Mint"
         android:text="First Theme"
         android:background="@drawable/background"
         android:textSize="@dimen/_20sdp" />
@@ -33,7 +33,7 @@
         android:layout_margin="@dimen/_10sdp"
         android:padding="@dimen/_10sdp"
         android:text="Second Theme"
-        android:textColor="@color/black"
+        android:textColor="@color/Mint"
         android:background="@drawable/background"
         android:textSize="@dimen/_20sdp" />
 
@@ -44,7 +44,7 @@
         android:layout_margin="@dimen/_10sdp"
         android:padding="@dimen/_10sdp"
         android:text="Third Theme"
-        android:textColor="@color/black"
+        android:textColor="@color/Mint"
         android:background="@drawable/background"
         android:textSize="@dimen/_20sdp" />
 

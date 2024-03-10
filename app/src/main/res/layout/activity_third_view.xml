@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    android:background="@color/teal_700"
+    android:background="@color/Mint"
     tools:context=".ThirdView">
 
     <TextView
@@ -17,8 +17,9 @@
         android:gravity="center"
         android:padding="@dimen/_10sdp"
         android:text="TextView"
-        android:textColor="@color/black"
-        android:textSize="@dimen/_30sdp" />
+        android:background="@drawable/background"
+        android:textColor="@color/Mint"
+        android:textSize="@dimen/_24sdp" />
 
     <TextView
         android:textColor="@color/black"
@@ -48,7 +49,7 @@
                 android:layout_margin="@dimen/_2sdp"
                 android:background="@drawable/background"
                 android:text="Button"
-                android:textColor="@color/black"
+                android:textColor="@color/Mint"
                 android:textSize="@dimen/_12sdp" />
 
             <Button
@@ -58,7 +59,7 @@
                 android:layout_margin="@dimen/_2sdp"
                 android:background="@drawable/background"
                 android:text="Button"
-                android:textColor="@color/black"
+                android:textColor="@color/Mint"
                 android:textSize="@dimen/_12sdp" />
 
             <Button
@@ -68,7 +69,7 @@
                 android:layout_margin="@dimen/_2sdp"
                 android:background="@drawable/background"
                 android:text="Button"
-                android:textColor="@color/black"
+                android:textColor="@color/Mint"
                 android:textSize="@dimen/_12sdp" />
 
             <Button
@@ -78,7 +79,7 @@
                 android:layout_margin="@dimen/_3sdp"
                 android:background="@drawable/background"
                 android:text="Button"
-                android:textColor="@color/black"
+                android:textColor="@color/Mint"
                 android:textSize="@dimen/_14sdp" />
         </TableRow>
 
@@ -94,7 +95,7 @@
                 android:layout_margin="@dimen/_2sdp"
                 android:background="@drawable/background"
                 android:text="Button"
-                android:textColor="@color/black"
+                android:textColor="@color/Mint"
                 android:textSize="@dimen/_12sdp" />
 
             <Button
@@ -104,7 +105,7 @@
                 android:layout_margin="@dimen/_2sdp"
                 android:background="@drawable/background"
                 android:text="Button"
-                android:textColor="@color/black"
+                android:textColor="@color/Mint"
                 android:textSize="@dimen/_12sdp" />
 
             <Button
@@ -114,7 +115,7 @@
                 android:layout_margin="@dimen/_2sdp"
                 android:background="@drawable/background"
                 android:text="Button"
-                android:textColor="@color/black"
+                android:textColor="@color/Mint"
                 android:textSize="@dimen/_12sdp" />
 
             <Button
@@ -124,7 +125,7 @@
                 android:layout_margin="@dimen/_2sdp"
                 android:background="@drawable/background"
                 android:text="Button"
-                android:textColor="@color/black"
+                android:textColor="@color/Mint"
                 android:textSize="@dimen/_12sdp" />
         </TableRow>
 
@@ -143,7 +144,7 @@
             android:layout_margin="@dimen/_2sdp"
             android:background="@drawable/background"
             android:text="next"
-            android:textColor="@color/black"
+            android:textColor="@color/Mint"
             android:textSize="@dimen/_12sdp" />
 
         <Button
@@ -156,7 +157,7 @@
             android:layout_marginBottom="@dimen/_2sdp"
             android:background="@drawable/background"
             android:text="Delete"
-            android:textColor="@color/black"
+            android:textColor="@color/Mint"
             android:textSize="@dimen/_12sdp" />
     </LinearLayout>
 
