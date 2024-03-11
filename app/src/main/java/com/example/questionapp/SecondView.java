@@ -87,7 +87,7 @@ public class SecondView extends AppCompatActivity {
     String Q10_3 ="مدينة الكنوز";
 
 
-
+    ArrayList<String> withOutRepeat = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -845,12 +845,49 @@ public class SecondView extends AppCompatActivity {
     }
 
     public void getAllQuestion() {
-        ArrayList<First_Second_Third_View_Quiz> quiz = db.getAllQuestion();
-        for (First_Second_Third_View_Quiz SecondView : quiz) {
-            tv_question.setText(  SecondView.getQuestion() );
-            rb_answer1.setText( SecondView.getFirstAnswer());
-            rb_answer2.setText(SecondView.getSecondAnswer());
-            rb_answer3.setText( SecondView.getThirdAnswer());
+        ArrayList<First_Second_Third_View_Quiz> firstView = db.getAllQuestion();
+        for (First_Second_Third_View_Quiz quiz : firstView) {
+            if (!(withOutRepeat.contains(quiz.getQuestion()))){
+                withOutRepeat.add(quiz.getQuestion());
+                tv_question.setText(quiz.getQuestion());
+                rb_answer1.setText(quiz.getFirstAnswer());
+                rb_answer2.setText(quiz.getSecondAnswer());
+                rb_answer3.setText(quiz.getThirdAnswer());
+            }
+            else if(withOutRepeat.size() < 10) {
+                getAllQuestion();
+            }
+            else{
+                dialog = new Dialog(this);
+                dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+                dialog.setContentView(R.layout.win_dialog);
+                dialog.setCancelable(true);
+
+                Button button_finish = dialog.findViewById(R.id.Custom_dialog_finish);
+                Button button_tryAgain = dialog.findViewById(R.id.Custom_dialog_tryAgain);
+
+
+
+                button_finish.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        withOutRepeat.clear();
+                        finish();
+
+                    }
+                });
+
+                button_tryAgain.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        withOutRepeat.clear();
+                        dialog.cancel();
+                        getAllQuestion();
+
+                    }
+                });
+                dialog.show();
+            }
         }
     }
 

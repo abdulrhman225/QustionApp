@@ -13,10 +13,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/_15sdp"
-        android:text="الجواب خاطئ حظا اوفر في المرة القادمة"
+        android:text="مبروك لقد فزت هل تريد اعادة المحاولة"
         android:textSize="@dimen/_16sdp"
 
-         />
+        />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -24,10 +24,10 @@
 
         <Button
             android:background="@drawable/background"
-            android:id="@+id/Custom_dialog_finish"
+            android:id="@+id/Custom_win_dialog_finish"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/_5sdp"
+            android:layout_margin="@dimen/_3sdp"
             android:textColor="@color/Mint"
             android:text="الرجوع الى البداية"
             android:textSize="@dimen/_12sdp" />
@@ -35,11 +35,11 @@
         <Button
             android:background="@drawable/background"
             android:textColor="@color/Mint"
-            android:id="@+id/Custom_dialog_tryAgain"
+            android:id="@+id/Custom_win_dialog_tryAgain"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/_5sdp"
-            android:text="آعادة المحاولة"
+            android:layout_margin="@dimen/_3sdp"
+            android:text="اعادة المحاولة"
             android:textSize="@dimen/_12sdp" />
     </LinearLayout>
 </LinearLayout>
