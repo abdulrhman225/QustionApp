@@ -19,7 +19,7 @@
         android:text="TextView"
         android:background="@drawable/background"
         android:textColor="@color/Mint"
-        android:textSize="@dimen/_24sdp" />
+        android:textSize="@dimen/_20sdp" />
 
     <TextView
         android:textColor="@color/black"

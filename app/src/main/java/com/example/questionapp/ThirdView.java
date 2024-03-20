@@ -2,9 +2,11 @@ package com.example.questionapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -19,7 +21,8 @@ public class ThirdView extends AppCompatActivity {
     TextView tv_answer;
     Button btn1, btn2, btn3 ,btn4 , btn5 , btn6 , btn7 , btn8 , btn_next , btn_empty;
     first_second_third_Activity_DataBase db = new first_second_third_Activity_DataBase(this);
-
+    Dialog dialog;
+    ArrayList<String> withOutRepeat = new ArrayList<>();
 
 
     String Question1 = "يضرب به المثل في الحفظ فيقال أحفظ من";
@@ -157,6 +160,7 @@ public class ThirdView extends AppCompatActivity {
             public void onClick(View view) {
                 String yourAnswer = tv_answer.getText().toString();
                 tv_answer.setText(yourAnswer + btn1.getText());
+                btn1.setVisibility(View.INVISIBLE);
             }
         });
 
@@ -166,6 +170,7 @@ public class ThirdView extends AppCompatActivity {
             public void onClick(View view) {
                 String yourAnswer = tv_answer.getText().toString();
                 tv_answer.setText(yourAnswer + btn2.getText());
+                btn2.setVisibility(View.INVISIBLE);
 
             }
         });
@@ -176,7 +181,7 @@ public class ThirdView extends AppCompatActivity {
             public void onClick(View view) {
                 String yourAnswer = tv_answer.getText().toString();
                 tv_answer.setText(yourAnswer + btn3.getText());
-
+                btn3.setVisibility(View.INVISIBLE);
             }
         });
 
@@ -186,7 +191,7 @@ public class ThirdView extends AppCompatActivity {
             public void onClick(View view) {
                 String yourAnswer = tv_answer.getText().toString();
                 tv_answer.setText(yourAnswer + btn4.getText());
-
+                btn4.setVisibility(View.INVISIBLE);
             }
         });
 
@@ -196,7 +201,7 @@ public class ThirdView extends AppCompatActivity {
             public void onClick(View view) {
                 String yourAnswer = tv_answer.getText().toString();
                 tv_answer.setText(yourAnswer + btn5.getText());
-
+                btn5.setVisibility(View.INVISIBLE);
             }
         });
 
@@ -206,7 +211,7 @@ public class ThirdView extends AppCompatActivity {
             public void onClick(View view) {
                 String yourAnswer = tv_answer.getText().toString();
                 tv_answer.setText(yourAnswer + btn6.getText());
-
+                btn6.setVisibility(View.INVISIBLE);
             }
         });
 
@@ -216,7 +221,7 @@ public class ThirdView extends AppCompatActivity {
             public void onClick(View view) {
                 String yourAnswer = tv_answer.getText().toString();
                 tv_answer.setText(yourAnswer + btn7.getText());
-
+                btn7.setVisibility(View.INVISIBLE);
             }
         });
 
@@ -226,7 +231,7 @@ public class ThirdView extends AppCompatActivity {
             public void onClick(View view) {
                 String yourAnswer = tv_answer.getText().toString();
                 tv_answer.setText(yourAnswer + btn8.getText());
-
+                btn8.setVisibility(View.INVISIBLE);
             }
         });
 
@@ -238,51 +243,131 @@ public class ThirdView extends AppCompatActivity {
                 if (tv_Question.getText().equals(Question1) && tv_answer.getText().equals(Answer1)){
                     getAllQuestion();
                     tv_answer.setText("");
+                    btn1.setVisibility(View.VISIBLE);
+                    btn2.setVisibility(View.VISIBLE);
+                    btn3.setVisibility(View.VISIBLE);
+                    btn4.setVisibility(View.VISIBLE);
+                    btn5.setVisibility(View.VISIBLE);
+                    btn6.setVisibility(View.VISIBLE);
+                    btn7.setVisibility(View.VISIBLE);
+                    btn8.setVisibility(View.VISIBLE);
                 }
 
                else if (tv_Question.getText().equals(Question2) && tv_answer.getText().equals(Answer2)){
                     getAllQuestion();
                     tv_answer.setText("");
+                    btn1.setVisibility(View.VISIBLE);
+                    btn2.setVisibility(View.VISIBLE);
+                    btn3.setVisibility(View.VISIBLE);
+                    btn4.setVisibility(View.VISIBLE);
+                    btn5.setVisibility(View.VISIBLE);
+                    btn6.setVisibility(View.VISIBLE);
+                    btn7.setVisibility(View.VISIBLE);
+                    btn8.setVisibility(View.VISIBLE);
                 }
 
                else if (tv_Question.getText().equals(Question3) && tv_answer.getText().equals(Answer3)){
                     getAllQuestion();
                     tv_answer.setText("");
+                    btn1.setVisibility(View.VISIBLE);
+                    btn2.setVisibility(View.VISIBLE);
+                    btn3.setVisibility(View.VISIBLE);
+                    btn4.setVisibility(View.VISIBLE);
+                    btn5.setVisibility(View.VISIBLE);
+                    btn6.setVisibility(View.VISIBLE);
+                    btn7.setVisibility(View.VISIBLE);
+                    btn8.setVisibility(View.VISIBLE);
                 }
 
                else if (tv_Question.getText().equals(Question4) && tv_answer.getText().equals(Answer4)){
                     getAllQuestion();
                     tv_answer.setText("");
+                    btn1.setVisibility(View.VISIBLE);
+                    btn2.setVisibility(View.VISIBLE);
+                    btn3.setVisibility(View.VISIBLE);
+                    btn4.setVisibility(View.VISIBLE);
+                    btn5.setVisibility(View.VISIBLE);
+                    btn6.setVisibility(View.VISIBLE);
+                    btn7.setVisibility(View.VISIBLE);
+                    btn8.setVisibility(View.VISIBLE);
                 }
 
                else  if (tv_Question.getText().equals(Question5) && tv_answer.getText().equals(Answer5)){
                     getAllQuestion();
                     tv_answer.setText("");
+                    btn1.setVisibility(View.VISIBLE);
+                    btn2.setVisibility(View.VISIBLE);
+                    btn3.setVisibility(View.VISIBLE);
+                    btn4.setVisibility(View.VISIBLE);
+                    btn5.setVisibility(View.VISIBLE);
+                    btn6.setVisibility(View.VISIBLE);
+                    btn7.setVisibility(View.VISIBLE);
+                    btn8.setVisibility(View.VISIBLE);
                 }
 
                else  if (tv_Question.getText().equals(Question6) && tv_answer.getText().equals(Answer6)){
                     getAllQuestion();
                     tv_answer.setText("");
+                    btn1.setVisibility(View.VISIBLE);
+                    btn2.setVisibility(View.VISIBLE);
+                    btn3.setVisibility(View.VISIBLE);
+                    btn4.setVisibility(View.VISIBLE);
+                    btn5.setVisibility(View.VISIBLE);
+                    btn6.setVisibility(View.VISIBLE);
+                    btn7.setVisibility(View.VISIBLE);
+                    btn8.setVisibility(View.VISIBLE);
                 }
 
                else  if (tv_Question.getText().equals(Question7) && tv_answer.getText().equals(Answer7)){
                     getAllQuestion();
                     tv_answer.setText("");
+                    btn1.setVisibility(View.VISIBLE);
+                    btn2.setVisibility(View.VISIBLE);
+                    btn3.setVisibility(View.VISIBLE);
+                    btn4.setVisibility(View.VISIBLE);
+                    btn5.setVisibility(View.VISIBLE);
+                    btn6.setVisibility(View.VISIBLE);
+                    btn7.setVisibility(View.VISIBLE);
+                    btn8.setVisibility(View.VISIBLE);
                 }
 
                else  if (tv_Question.getText().equals(Question8) && tv_answer.getText().equals(Answer8)){
                     getAllQuestion();
                     tv_answer.setText("");
+                    btn1.setVisibility(View.VISIBLE);
+                    btn2.setVisibility(View.VISIBLE);
+                    btn3.setVisibility(View.VISIBLE);
+                    btn4.setVisibility(View.VISIBLE);
+                    btn5.setVisibility(View.VISIBLE);
+                    btn6.setVisibility(View.VISIBLE);
+                    btn7.setVisibility(View.VISIBLE);
+                    btn8.setVisibility(View.VISIBLE);
                 }
 
                else  if (tv_Question.getText().equals(Question9) && tv_answer.getText().equals(Answer9)){
                     getAllQuestion();
                     tv_answer.setText("");
+                    btn1.setVisibility(View.VISIBLE);
+                    btn2.setVisibility(View.VISIBLE);
+                    btn3.setVisibility(View.VISIBLE);
+                    btn4.setVisibility(View.VISIBLE);
+                    btn5.setVisibility(View.VISIBLE);
+                    btn6.setVisibility(View.VISIBLE);
+                    btn7.setVisibility(View.VISIBLE);
+                    btn8.setVisibility(View.VISIBLE);
                 }
 
                else  if (tv_Question.getText().equals(Question10) && tv_answer.getText().equals(Answer10)){
                     getAllQuestion();
                     tv_answer.setText("");
+                    btn1.setVisibility(View.VISIBLE);
+                    btn2.setVisibility(View.VISIBLE);
+                    btn3.setVisibility(View.VISIBLE);
+                    btn4.setVisibility(View.VISIBLE);
+                    btn5.setVisibility(View.VISIBLE);
+                    btn6.setVisibility(View.VISIBLE);
+                    btn7.setVisibility(View.VISIBLE);
+                    btn8.setVisibility(View.VISIBLE);
                 }
             }
         });
@@ -291,23 +376,69 @@ public class ThirdView extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 tv_answer.setText("");
+                btn1.setVisibility(View.VISIBLE);
+                btn2.setVisibility(View.VISIBLE);
+                btn3.setVisibility(View.VISIBLE);
+                btn4.setVisibility(View.VISIBLE);
+                btn5.setVisibility(View.VISIBLE);
+                btn6.setVisibility(View.VISIBLE);
+                btn7.setVisibility(View.VISIBLE);
+                btn8.setVisibility(View.VISIBLE);
             }
         });
     }
 
 
-    public void getAllQuestion(){
+
+    public void getAllQuestion() {
         ArrayList<First_Second_Third_View_Quiz> thirdViewQuiz = db.getAllQuestion2();
-        for (First_Second_Third_View_Quiz q : thirdViewQuiz){
-            tv_Question.setText(q.getQuestion2());
-            btn1.setText(q.getButton1());
-            btn2.setText(q.getButton2());
-            btn3.setText(q.getButton3());
-            btn4.setText(q.getButton4());
-            btn5.setText(q.getButton5());
-            btn6.setText(q.getButton6());
-            btn7.setText(q.getButton7());
-            btn8.setText(q.getButton8());
+        for (First_Second_Third_View_Quiz quiz : thirdViewQuiz) {
+            if (!(withOutRepeat.contains(quiz.getQuestion2()))){
+                withOutRepeat.add(quiz.getQuestion2());
+                tv_Question.setText(quiz.getQuestion2());
+                btn1.setText(quiz.getButton1());
+                btn2.setText(quiz.getButton2());
+                btn3.setText(quiz.getButton3());
+                btn4.setText(quiz.getButton4());
+                btn5.setText(quiz.getButton5());
+                btn6.setText(quiz.getButton6());
+                btn7.setText(quiz.getButton7());
+                btn8.setText(quiz.getButton8());
+            }
+            else if(withOutRepeat.size() < 10) {
+                getAllQuestion();
+            }
+            else{
+                dialog = new Dialog(this);
+                dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+                dialog.setContentView(R.layout.win_dialog);
+                dialog.setCancelable(true);
+
+                Button button_finish = dialog.findViewById(R.id.Custom_win_dialog_finish);
+                Button button_tryAgain = dialog.findViewById(R.id.Custom_win_dialog_tryAgain);
+
+
+
+                button_finish.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        withOutRepeat.clear();
+                        finish();
+
+                    }
+                });
+
+                button_tryAgain.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        withOutRepeat.clear();
+                        dialog.cancel();
+                        getAllQuestion();
+
+                    }
+                });
+                dialog.show();
+            }
         }
     }
 }

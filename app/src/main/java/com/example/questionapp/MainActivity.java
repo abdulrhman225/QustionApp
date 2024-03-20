@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     RadioButton rb_answer1, rb_answer2, rb_answer3;
     Button btn_next;
     Dialog dialog;
+    Dialog dialog2;
     first_second_third_Activity_DataBase db = new first_second_third_Activity_DataBase(this);
     ArrayList<String> withOutRepeat = new ArrayList<>();
 
@@ -98,13 +99,13 @@ public class MainActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
 
-        dialog = new Dialog(this);
-        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        dialog.setContentView(R.layout.custom_dialog);
-        dialog.setCancelable(true);
+        dialog2 = new Dialog(this);
+        dialog2.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog2.setContentView(R.layout.custom_dialog);
+        dialog2.setCancelable(true);
 
-        Button button_finish = dialog.findViewById(R.id.Custom_dialog_finish);
-        Button button_tryAgain = dialog.findViewById(R.id.Custom_dialog_tryAgain);
+        Button button_finish = dialog2.findViewById(R.id.Custom_dialog_finish);
+        Button button_tryAgain = dialog2.findViewById(R.id.Custom_dialog_tryAgain);
 
 
         button_finish.setOnClickListener(new View.OnClickListener() {
@@ -118,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
         button_tryAgain.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                dialog.cancel();
+                dialog2.cancel();
                 getAllQuestion();
 
             }
@@ -158,19 +159,15 @@ public class MainActivity extends AppCompatActivity {
                     getAllQuestion();
                 } else if (tv_question.getText().equals(Question4) && rb_answer1.isChecked()) {
                     rb_answer1.setChecked(false);
-
                     getAllQuestion();
                 } else if (tv_question.getText().equals(Question8) && rb_answer1.isChecked()) {
                     rb_answer1.setChecked(false);
-
                     getAllQuestion();
                 } else if (tv_question.getText().equals(Question10) && rb_answer1.isChecked()) {
                     rb_answer1.setChecked(false);
-
                     getAllQuestion();
                 }
-
-                if (tv_question.getText().equals(Question3) && rb_answer2.isChecked()) {
+                else if (tv_question.getText().equals(Question3) && rb_answer2.isChecked()) {
                     rb_answer2.setChecked(false);
                     getAllQuestion();
                 } else if (tv_question.getText().equals(Question5) && rb_answer2.isChecked()) {
@@ -183,14 +180,15 @@ public class MainActivity extends AppCompatActivity {
                     rb_answer2.setChecked(false);
                     getAllQuestion();
                 }
-
-
-                if (tv_question.getText().equals(Question2) && rb_answer3.isChecked()) {
+                else if (tv_question.getText().equals(Question2) && rb_answer3.isChecked()) {
                     rb_answer3.setChecked(false);
                     getAllQuestion();
                 } else if (tv_question.getText().equals(Question6) && rb_answer3.isChecked()) {
                     rb_answer3.setChecked(false);
                     getAllQuestion();
+                }
+                else{
+                    dialog2.show();
                 }
 
 

@@ -864,7 +864,7 @@ public class SecondView extends AppCompatActivity {
                 dialog.setCancelable(true);
 
                 Button button_finish = dialog.findViewById(R.id.Custom_dialog_finish);
-                Button button_tryAgain = dialog.findViewById(R.id.Custom_dialog_tryAgain);
+                Button button_tryAgain = dialog.findViewById(R.id.Custom_win_dialog_tryAgain);
 
 
 
